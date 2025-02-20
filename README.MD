@@ -57,6 +57,8 @@ This project was inspired by the curiosity to explore algorithms and improve per
 ## Contact
 If you have any questions or suggestions, feel free to contact through GitHub Issues or reach out at simatsan186@gmail.com.
 
+This project is part of [Sorting Algorithms](https://github.com/topics/sorting-algorithm) on GitHub.
+
 ##Compilation and Usage
 
 To compile and run the algorithm, use the following commands:
