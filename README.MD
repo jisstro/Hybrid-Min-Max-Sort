@@ -44,13 +44,6 @@ The algorithm was tested against:
 
 - The algorithm is **faster than QSort** across all array sizes.
 - On an **array of 1,000,000 elements**, the algorithm is approximately **42% faster** than QSort.
-##Compilation and Usage
-
-To compile and run the algorithm, use the following commands:
-
-```bash
-gcc -O3 main.c min_max_sort.c -o min_max_sort
-./min_max_sort
 
 ## Contributing and Feedback
 This project is open to constructive feedback and suggestions for improvement. If you have ideas on how to enhance its performance or code quality, feel free to open an Issue or submit a Pull Request.
@@ -63,4 +56,12 @@ This project was inspired by the curiosity to explore algorithms and improve per
 
 ## Contact
 If you have any questions or suggestions, feel free to contact through GitHub Issues or reach out at simatsan186@gmail.com.
+
+##Compilation and Usage
+
+To compile and run the algorithm, use the following commands:
+
+```bash
+gcc -O3 main.c min_max_sort.c -o min_max_sort
+./min_max_sort
 
