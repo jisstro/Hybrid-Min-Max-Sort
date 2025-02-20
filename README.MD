@@ -11,21 +11,31 @@ This algorithm:
 - Includes **hybridization with MergeSort** in case of inefficient partitioning, ensuring O(n log n) performance in the worst case.
 - **Optimized for both int and double** data types.
 ---
-##Algorithm Explanation
-Adaptive Partitioning:
 
-If the segment is smaller than a certain threshold, insertion sort is used for better performance.
-For larger segments, two pivot elements are selected:
-Lower pivot — median of the first few elements.
-Upper pivot — median of the last few elements.
-The array is divided into three parts:
-Less than the lower pivot.
-Between the two pivots.
-Greater than the upper pivot.
+##Adaptive Partitioning:
+Threshold-Based Sorting:
+
+If the segment size is below a predefined threshold, Insertion Sort is applied for optimal performance on small arrays.
+For larger segments, the array is partitioned using two pivots:
+Lower Pivot: Chosen as the median of the first few elements.
+Upper Pivot: Chosen as the median of the last few elements.
+Three-Way Partitioning:
+
+The array is divided into three distinct parts:
+Elements less than the lower pivot.
+Elements between the two pivots.
+Elements greater than the upper pivot.
 Hybridization with MergeSort:
-If partitioning is inefficient (segments are not reducing in size), MergeSort is used.
+If the partitioning is inefficient (i.e., the segments are not reducing in size), the algorithm switches to MergeSort.
+This hybrid approach ensures stable performance even in cases where QuickSort would degrade to O(n²).
 Recursive Sorting:
-The algorithm recursively applies itself to each of the three segments.
+The algorithm recursively sorts each of the three partitions:
+Elements smaller than the lower pivot.
+Elements between the two pivots.
+Elements larger than the upper pivot.
+Tail recursion optimization and adaptive thresholds are used to enhance performance and reduce stack depth.
+
+##Asymptotic Analysis of Hybrid Min-Max Sort:
 Time Complexity:
 Best Case: O(n log n)
 
