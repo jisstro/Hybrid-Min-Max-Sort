@@ -1,6 +1,6 @@
 # Hybrid Min-Max Sort
 
-Hybrid Min-Max Sort is an experimental sorting algorithm that combines ideas from QuickSort and MergeSort using two pivot elements. It was developed for educational purposes to explore hybrid sorting algorithms and performance optimization techniques.
+Hybrid Min-Max Sort is an experimental sorting algorithm that combines ideas from QuickSort and MergeSort using two pivot elements. It was developed for educational purposes to explore hybrid sorting algorithms and performance optimization techniques. 
 
 ---
 ## Description
@@ -23,11 +23,25 @@ Less than the lower pivot.
 Between the two pivots.
 Greater than the upper pivot.
 Hybridization with MergeSort:
-
 If partitioning is inefficient (segments are not reducing in size), MergeSort is used.
 Recursive Sorting:
-
 The algorithm recursively applies itself to each of the three segments.
+Time Complexity:
+Best Case: O(n log n)
+
+Occurs when pivot elements evenly divide the array into three parts.
+In this case, the recursion depth is minimized, and the number of comparisons and swaps is optimal.
+Average Case: O(n log n)
+
+The use of medians from multiple elements ensures a high probability of balanced partitioning.
+Recursive calls handle roughly equal subarrays, maintaining a logarithmic recursion depth.
+Worst Case: O(n log n)
+
+In the worst case, the algorithm hybridizes with MergeSort, which guarantees O(n log n) complexity.
+This avoids the performance degradation typically seen in QuickSort (O(n²) in the worst case).
+Space Complexity:
+O(n) — for the temporary buffer used in MergeSort.
+O(log n) — for the recursion stack in the optimized version.
 
 ## Performance
 
