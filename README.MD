@@ -69,19 +69,11 @@ The algorithm was tested against:
 - The algorithm is **faster than QSort** across all array sizes.
 - On an **array of 1,000,000 elements**, the algorithm is approximately **42% faster** than QSort.
 
-## Contributing and Feedback
-This project is open to constructive feedback and suggestions for improvement. If you have ideas on how to enhance its performance or code quality, feel free to open an Issue or submit a Pull Request.
-
 ## License
 This project is licensed under the GPL v3. See the LICENSE file for more details.
 
-## Acknowledgments
-This project was inspired by the curiosity to explore algorithms and improve performance. Special thanks to the open-source community for their support and inspiration.
-
 ## Contact
 If you have any questions or suggestions, feel free to contact through GitHub Issues or reach out at simatsan186@gmail.com.
-
-This project is part of [Sorting Algorithms](https://github.com/topics/sorting-algorithm) on GitHub.
 
 ##Compilation and Usage
 
