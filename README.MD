@@ -9,7 +9,7 @@ This algorithm:
 - Uses **two pivot elements** (lower and upper) to divide the array into three parts: less than the lower pivot, between the pivots, and greater than the upper pivot.
 - Applies **clustering around medians** for more balanced partitioning.
 - Includes **hybridization with MergeSort** in case of inefficient partitioning, ensuring O(n log n) performance in the worst case.
-- **Optimized for both int and double** data types.
+- **Optimized for both int and double** data types. (in C, in c++ only int)
 ---
 
 ##Adaptive Partitioning:
